@@ -1,0 +1,1202 @@
+[
+  {
+    "question": "Which of the following best describes the primary purpose of the Architecture Canvas in OutSystems?",
+    "options": [
+      "A. To provide a detailed technical blueprint for developers.",
+      "B. To facilitate communication and alignment on architectural decisions among stakeholders.",
+      "C. To automatically generate code based on architectural patterns.",
+      "D. To replace the need for detailed documentation."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "A key element of the Architecture Canvas is the identification of Bounded Contexts. What does this term represent?",
+    "options": [
+      "A. The physical boundaries of the application server.",
+      "B. Logical areas of the application with specific business responsibilities and their own data models.",
+      "C. The limitations of the OutSystems platform.",
+      "D. The security constraints applied to the application."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "When using the Architecture Canvas, what is the recommended approach for addressing cross-cutting concerns like logging and security?",
+    "options": [
+      "A. Embed them directly within each module for performance optimization.",
+      "B. Define them as separate services or libraries that can be reused across multiple modules.",
+      "C. Handle them exclusively in the End-User modules for better user experience.",
+      "D. Ignore them during the initial design phase and address them later in the development cycle."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "How does the Architecture Canvas help manage technical debt in an OutSystems application?",
+    "options": [
+      "A. It automatically refactors code to remove technical debt.",
+      "B. It provides a visual representation of dependencies and potential areas of complexity.",
+      "C. It eliminates the need for code reviews and testing.",
+      "D. It restricts the use of third-party libraries and components."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "In the OutSystems architecture design process, what is the significance of identifying Non-Functional Requirements (NFRs)?",
+    "options": [
+      "A. NFRs are only relevant for very large applications and can be ignored for smaller projects.",
+      "B. NFRs define the quality attributes of the system, such as performance, security, and scalability, and influence architectural choices.",
+      "C. NFRs are solely the responsibility of the business stakeholders and do not impact the technical architecture.",
+      "D. NFRs are addressed only after the functional requirements have been fully implemented."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the recommended approach for designing the data model in an OutSystems application?",
+    "options": [
+      "A. Create a single, large database to store all application data for simplicity.",
+      "B. Design the data model based on the bounded contexts identified in the Architecture Canvas, ensuring each context has its own logical data model.",
+      "C. Prioritize database performance over data integrity and normalization.",
+      "D. Allow developers to create and modify database tables directly without following any predefined guidelines."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "During the architecture design phase, what is the purpose of creating Proof of Concepts (POCs)?",
+    "options": [
+      "A. To replace the need for thorough testing and validation.",
+      "B. To demonstrate the feasibility of a technical approach or integration before committing to a full implementation.",
+      "C. To provide a polished user interface for early feedback from business users.",
+      "D. To finalize the database schema and deployment strategy."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the role of the Solution Architect during the architecture design phase in OutSystems?",
+    "options": [
+      "A. To write all the code and implement the user interface.",
+      "B. To define the overall architecture vision, make key technical decisions, and ensure alignment with business goals.",
+      "C. To manage the project timeline and budget.",
+      "D. To handle all the testing and deployment activities."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "Which of the following is a characteristic of a well-designed OutSystems architecture?",
+    "options": [
+      "A. Maximum code reuse, even if it leads to tight coupling between modules.",
+      "B. A balance between flexibility, maintainability, performance, and security.",
+      "C. A complex and intricate design that showcases the technical expertise of the development team.",
+      "D. A monolithic architecture where all functionality is contained within a single module."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What does the principle of Loose Coupling mean in the context of OutSystems architecture?",
+    "options": [
+      "A. Modules should be designed in a way that minimizes dependencies on each other, allowing for independent changes and deployments.",
+      "B. Modules should share as much code as possible to reduce redundancy.",
+      "C. All modules should be deployed to the same server for better performance.",
+      "D. Modules should be tightly integrated to ensure data consistency."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "question": "Why is it important to consider scalability when designing an OutSystems architecture?",
+    "options": [
+      "A. Scalability is only a concern for applications with a very large user base.",
+      "B. A well-designed architecture should be able to handle increasing user load and data volume without significant performance degradation.",
+      "C. Scalability is solely the responsibility of the infrastructure team and does not impact architectural decisions.",
+      "D. Scalability can always be addressed later, after the application has been deployed."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "Which architectural pattern is best suited for implementing a complex business process that involves multiple steps and actors?",
+    "options": [
+      "A. Microservices",
+      "B. Layered Architecture",
+      "C. Event-Driven Architecture",
+      "D. Model-View-Controller (MVC)"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "In an OutSystems application, what is the purpose of using the Facade pattern?",
+    "options": [
+      "A. To provide a simplified interface to a complex subsystem, hiding its internal workings from consumers.",
+      "B. To decouple the user interface from the business logic and data access layers.",
+      "C. To handle asynchronous operations and background tasks.",
+      "D. To manage data persistence and database interactions."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "question": "What is an example of the Singleton pattern implementation within an OutSystems application?",
+    "options": [
+      "A. A Site Property.",
+      "B. A Timer.",
+      "C. A REST API integration.",
+      "D. A Server Action used for logging."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "question": "You need to integrate with an external system that provides data in a specific format. Which integration pattern is most appropriate for transforming the data into a format suitable for your OutSystems application?",
+    "options": [
+      "A. Direct Database Access",
+      "B. Canonical Data Model",
+      "C. Shared Database",
+      "D. Remote Procedure Invocation"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "When should you consider using the Microservices architectural pattern in an OutSystems application?",
+    "options": [
+      "A. For small applications with limited functionality.",
+      "B. When you need to decompose a large, complex application into smaller, independently deployable services.",
+      "C. To improve the performance of simple CRUD operations.",
+      "D. When you have a small development team with limited experience."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the primary goal of Architecture Validation in OutSystems?",
+    "options": [
+      "A. To ensure that the code is free of syntax errors.",
+      "B. To verify that the application meets the functional requirements.",
+      "C. To identify and address deviations from the defined architectural guidelines and best practices.",
+      "D. To measure the performance and scalability of the application."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "Which tool within OutSystems Service Center is used to perform Architecture Validation?",
+    "options": [
+      "A. LifeTime",
+      "B. Deployment Zone",
+      "C. Architecture Dashboard",
+      "D. Integration Studio"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What type of architectural violation would be flagged if a Foundation module has a strong dependency on an End-User module?",
+    "options": [
+      "A. Cyclic Dependency",
+      "B. Upward Dependency",
+      "C. Orphaned Module",
+      "D. Large Module"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the purpose of refactoring an OutSystems application?",
+    "options": [
+      "A. To fix bugs and defects in the code.",
+      "B. To improve the internal structure and design of the code without changing its external behavior.",
+      "C. To add new features and functionality to the application.",
+      "D. To deploy the application to different environments."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "Which of the following is a valid reason to refactor an OutSystems module?",
+    "options": [
+      "A. To remove unused variables and code.",
+      "B. To improve code readability and maintainability.",
+      "C. To reduce code complexity and improve performance.",
+      "D. All of the above."
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "question": "When refactoring, which of these should you avoid?",
+    "options": [
+      "A. Running tests before refactoring.",
+      "B. Making many large changes all at once.",
+      "C. Updating documentation after changes.",
+      "D. Using version control."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "When extracting a reusable component from an existing module, what steps should you take to ensure a smooth refactoring process?",
+    "options": [
+      "A. Copy and paste the code into the new module and then delete the original code.",
+      "B. Refactor the existing module first, then create the new module, and finally move the component.",
+      "C. Create the new module, move the component, adjust dependencies, and thoroughly test to ensure existing functionality remains intact.",
+      "D. Make all changes directly in production to minimize downtime."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What is the main benefit of implementing a custom Style Guide in an OutSystems application?",
+    "options": [
+      "A. To reduce the number of modules in the application.",
+      "B. To ensure consistency in the look and feel of the application across different devices and browsers.",
+      "C. To improve the performance of the application by reducing the amount of CSS code.",
+      "D. To automate the testing process"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What elements are typically included in an OutSystems Style Guide?",
+    "options": [
+      "A. Only CSS styles and images.",
+      "B. CSS styles, images, reusable UI components (Web Blocks), and JavaScript code.",
+      "C. Database entities and server-side logic.",
+      "D. Integration configurations and external API definitions."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "Where should the Style Guide module be placed within the module layers in OutSystems Architecture?",
+    "options": [
+      "A. End-User Layer",
+      "B. Foundation Layer",
+      "C. Core Layer",
+      "D. It can reside in any layer without consequence."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "Which of the following best describes the concept of Application Composition in OutSystems?",
+    "options": [
+      "A. Combining multiple applications into a single monolithic solution.",
+      "B. Breaking down a large application into smaller, independent modules.",
+      "C. Assembling reusable modules and services to create a complete application.",
+      "D. Integrating OutSystems applications with external systems."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What is a key advantage of using a modular approach for application composition?",
+    "options": [
+      "A. Increased development speed and improved maintainability due to independent development and deployment of modules.",
+      "B. Reduced performance due to increased inter-module communication.",
+      "C. Elimination of the need for testing and validation.",
+      "D. A simpler architecture that is easier to understand and manage."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "question": "When composing an application, what type of module should contain the user interface and business logic specific to a particular use case or business process?",
+    "options": [
+      "A. Foundation Module",
+      "B. Core Module",
+      "C. End-User Module",
+      "D. Library Module"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "When composing an application using modules from different teams or providers, what is a key consideration for ensuring compatibility and maintainability?",
+    "options": [
+      "A. Enforcing strict coding standards and naming conventions.",
+      "B. Avoiding any dependencies between modules.",
+      "C. Using a shared database for all modules.",
+      "D. Deploying all modules to the same environment simultaneously."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "question": "What is the primary purpose of the Architecture Canvas in OutSystems?",
+    "options": [
+      "A. To generate application code automatically.",
+      "B. To facilitate communication and alignment on architectural decisions.",
+      "C. To define the user interface of the application.",
+      "D. To manage the project budget and timeline."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "Which layer in the Architecture Canvas is responsible for user interfaces and processes?",
+    "options": [
+      "A. Foundation Layer",
+      "B. Core Layer",
+      "C. End-User Layer",
+      "D. Orchestration Layer (OutSystems 10 and earlier)."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What is the significance of Bounded Contexts in the Architecture Canvas?",
+    "options": [
+      "A. They represent physical limitations of the application server.",
+      "B. They define logical areas of the application with specific responsibilities and data models.",
+      "C. They outline the security constraints of the application.",
+      "D. They describe the integration points with external systems."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "How does the Architecture Canvas address the challenge of managing multiple applications and modules with different lifecycles?",
+    "options": [
+      "A. By enforcing a monolithic architecture.",
+      "B. By promoting the correct abstraction of reusable services and isolation of modules.",
+      "C. By restricting the number of modules in an application.",
+      "D. By automating the deployment process."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "Which of the following is the recommended approach for architecture design in OutSystems?",
+    "options": [
+      "A. A one-time event completed before development begins.",
+      "B. An iterative process that evolves with the application.",
+      "C. A linear process with distinct phases.",
+      "D. Driven solely by the development team's technical expertise."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the first step in the architecture design process, as described in the document?",
+    "options": [
+      "A. Define modules.",
+      "B. Identify and disclose business concepts and integration needs.",
+      "C. Organize concepts on the architecture canvas.",
+      "D. Assemble matching recommended patterns."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the purpose of identifying Non-Functional Requirements (NFRs) during the design phase?",
+    "options": [
+      "A. To determine the specific UI elements required.",
+      "B. To define quality attributes like performance, security, and scalability.",
+      "C. To specify the programming languages to be used.",
+      "D. To establish the project budget."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the importance of understanding user stories in the design process?",
+    "options": [
+      "A. They dictate the specific coding techniques to be employed.",
+      "B. They help in identifying the functional requirements of the application.",
+      "C. They define the deployment strategy for the application.",
+      "D. They provide insights into the project's financial constraints."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "Which of the following is a key characteristic of a well-designed architecture?",
+    "options": [
+      "A. Tight coupling between modules for maximum code reuse.",
+      "B. A complex and intricate design showcasing technical expertise.",
+      "C. A balance between flexibility, maintainability, performance, and security.",
+      "D. Minimal documentation to avoid overhead."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What is the principle of loose coupling in OutSystems architecture?",
+    "options": [
+      "A. Maximizing dependencies between modules.",
+      "B. Minimizing dependencies between modules for independent development and deployment.",
+      "C. Deploying all modules to the same server.",
+      "D. Integrating all modules tightly to ensure data consistency."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "Why is service isolation important in a good architecture?",
+    "options": [
+      "A. To increase coupling between modules.",
+      "B. To make it harder to refactor code later.",
+      "C. To promote independent lifecycles and easier refactoring.",
+      "D. To make all services accessible to all modules."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "When integrating with an external system, what pattern promotes system independence and extensibility?",
+    "options": [
+      "A. Direct integration without abstraction.",
+      "B. Creating a single integration point for all external systems.",
+      "C. Using an Integration Service to abstract the external system.",
+      "D. Directly accessing the external database."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What is the Cold Cache pattern used for?",
+    "options": [
+      "A. Caching frequently changing data.",
+      "B. Caching data that doesn't change often, like summary data.",
+      "C. Caching sensitive data like user credentials.",
+      "D. Caching data solely for offline access."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "When is the Lazy Load Details pattern recommended?",
+    "options": [
+      "A. When detail data is rarely used.",
+      "B. When fetching details is costly and the details are reused frequently.",
+      "C. When detail data needs to be synchronized in real time.",
+      "D. When detail data is always accessed alongside summary data."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What problem does the Queued Real-time Sync pattern address?",
+    "options": [
+      "A. Slow network connections.",
+      "B. Inconsistent data formats.",
+      "C. High volumes of changes that cannot be processed efficiently by standard real-time sync.",
+      "D. Lack of security in real-time data transfer."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "When is the Transparency Service pattern applicable?",
+    "options": [
+      "A. When dealing with a single source of truth for data.",
+      "B. When there are multiple sources for the same type of information with varying formats.",
+      "C. When data is only read from external systems, never written.",
+      "D. When all integrations use the same API."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the purpose of Architecture Validation in OutSystems?",
+    "options": [
+      "A. To ensure the application meets performance requirements.",
+      "B. To verify the user interface is intuitive.",
+      "C. To identify deviations from architectural best practices.",
+      "D. To test the application's functionality."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What tool can be used to automatically verify architecture compliance in OutSystems?",
+    "options": [
+      "A. Service Center",
+      "B. Service Studio",
+      "C. Integration Studio",
+      "D. Discovery"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "question": "What does an upward reference architectural violation indicate?",
+    "options": [
+      "A. A module in a higher layer depends on a module in a lower layer.",
+      "B. A module in a lower layer depends on a module in a higher layer.",
+      "C. Two modules have a circular dependency.",
+      "D. A module has no dependencies."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the goal of refactoring in OutSystems?",
+    "options": [
+      "A. To change the application's functionality.",
+      "B. To improve the code structure without changing external behavior.",
+      "C. To add new features to the application.",
+      "D. To fix bugs in the code."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What are some valid reasons for refactoring?",
+    "options": [
+      "A. Improve code readability.",
+      "B. Reduce code complexity.",
+      "C. Remove unused code.",
+      "D. Change the user interface."
+    ],
+    "correctAnswer": "A, B, C"
+  },
+  {
+    "question": "When refactoring, what practice should be avoided?",
+    "options": [
+      "A. Making small, incremental changes.",
+      "B. Making large, sweeping changes all at once.",
+      "C. Running tests before and after refactoring.",
+      "D. Using version control."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "When extracting a reusable component during refactoring, which step is crucial?",
+    "options": [
+      "A. Copy and pasting code directly without adjustments.",
+      "B. Modifying the component in the original module before moving.",
+      "C. Thoroughly testing to ensure existing functionality isn't broken after moving the component.",
+      "D. Deploying changes directly to production to minimize downtime."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What is the primary benefit of using a Style Guide in OutSystems?",
+    "options": [
+      "A. To improve application performance.",
+      "B. To enforce consistency in the application's look and feel.",
+      "C. To reduce the size of the application.",
+      "D. To automate the development process."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What components are typically included in an OutSystems Style Guide module?",
+    "options": [
+      "A. Server-side logic and database entities.",
+      "B. CSS styles, images, reusable UI components (Web Blocks), and JavaScript.",
+      "C. Integration configurations and external API definitions.",
+      "D. Unit tests and test cases."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "In which layer of the OutSystems architecture should the Style Guide module be placed?",
+    "options": [
+      "A. End-User Layer",
+      "B. Core Layer",
+      "C. Foundation Layer",
+      "D. Orchestration Layer"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What does Application Composition refer to in OutSystems?",
+    "options": [
+      "A. Creating a single, monolithic application.",
+      "B. Assembling reusable modules and services to create a complete application.",
+      "C. Integrating with external systems.",
+      "D. Designing the user interface."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is a key advantage of using a modular approach for application composition?",
+    "options": [
+      "A. Reduced development speed.",
+      "B. Increased maintenance complexity.",
+      "C. Improved maintainability and independent development/deployment.",
+      "D. Tighter coupling between modules."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What type of module in an application typically contains user interface and business logic specific to a use case?",
+    "options": [
+      "A. Foundation module",
+      "B. Core module",
+      "C. End-User module",
+      "D. Library Module"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What is a critical consideration for ensuring compatibility when composing applications using modules from different teams?",
+    "options": [
+      "A. Avoiding any dependencies between modules.",
+      "B. Deploying all modules simultaneously.",
+      "C. Using a shared database for all modules.",
+      "D. Enforcing strict coding standards and naming conventions."
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "question": "Two teams are working on different parts of a large application: a customer-facing portal and a back-office administration panel. How should these be represented on the Architecture Canvas?",
+    "options": [
+      "A. As a single bounded context, since they belong to the same application.",
+      "B. As separate bounded contexts, to reflect their distinct functionalities and user groups.",
+      "C. As separate layers within the same bounded context.",
+      "D. As a single module within different layers."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "During a project kickoff meeting, stakeholders identify a future need for integration with a third-party CRM system. This integration is not required for the initial release. How should this future requirement be addressed on the Architecture Canvas?",
+    "options": [
+      "A. Ignore it for now and add it later when the integration becomes necessary.",
+      "B. Document it in the Future Considerations section of the canvas.",
+      "C. Create a placeholder bounded context or integration point to represent the future integration.",
+      "D. Add it as a non-functional requirement to guide architectural decisions."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "You're using the Architecture Canvas to design an application with complex business rules. Where should these rules be documented?",
+    "options": [
+      "A. Within the relevant bounded contexts, to show where they apply.",
+      "B. As a separate bounded context dedicated to business rules.",
+      "C. In the non-functional requirements, as they influence the overall architecture.",
+      "D. They don't need to be on the Canvas, as they're implementation details."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "question": "A team is designing an application with multiple user roles: Customer, Manager, and Administrator. Where on the Architecture Canvas should these roles be considered?",
+    "options": [
+      "A. In the User Interface layer.",
+      "B. As part of the Security bounded context.",
+      "C. Within each bounded context, specifying access levels for each role.",
+      "D. As a non-functional requirement, as they impact access control and authorization."
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "question": "During the design phase, you need to choose between two database technologies for your application. What factors should influence your decision?",
+    "options": [
+      "A. Developer familiarity with the technologies.",
+      "B. Application scalability and performance requirements, data volume, and security considerations.",
+      "C. The cost of the database licenses.",
+      "D. The popularity of the database technologies."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "You are designing an application that will be used in multiple countries. How should internationalization requirements be addressed during the design phase?",
+    "options": [
+      "A. Implement translations directly in the UI screens.",
+      "B. Design the data model and UI to support localization, and choose appropriate internationalization mechanisms.",
+      "C. Postpone internationalization until after the initial release.",
+      "D. Rely on the OutSystems platform to automatically handle translations."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "During the design review of a new application, performance concerns are raised regarding a specific module. What's the best approach to address this?",
+    "options": [
+      "A. Ignore the concerns for now and address them during performance testing.",
+      "B. Re-architect the entire application to optimize performance.",
+      "C. Conduct a performance analysis of the module and refactor its logic or database interactions based on the findings.",
+      "D. Reduce the scope of the module's functionality."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "How should error handling and logging be addressed in the design of an OutSystems application?",
+    "options": [
+      "A. Implement error handling and logging only in the user interface layer.",
+      "B. Design a comprehensive strategy for handling exceptions and logging errors across all layers of the application.",
+      "C. Rely on the OutSystems platform to automatically handle all errors.",
+      "D. Postpone error handling and logging until the testing phase."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "An application's UI is tightly coupled to the underlying data model. What is a potential consequence of this tight coupling?",
+    "options": [
+      "A. Improved performance due to direct data access.",
+      "B. Reduced development effort due to code reuse.",
+      "C. Difficulty in changing the UI without affecting the data model, and vice versa.",
+      "D. Increased flexibility in adapting to new requirements."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "A team is designing a complex application with many interconnected modules. Which architectural approach would best promote maintainability and scalability?",
+    "options": [
+      "A. A monolithic architecture, where all modules are tightly integrated.",
+      "B. A modular architecture with well-defined interfaces and loose coupling between modules.",
+      "C. An architecture with no clear separation between layers or modules.",
+      "D. An architecture with maximum code duplication to avoid dependencies."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "A core principle of good architecture design is separation of concerns. What does this mean in the context of OutSystems development?",
+    "options": [
+      "A. Mixing different functionalities (e.g., UI, business logic, data access) within the same module.",
+      "B. Dividing the application into distinct modules with clear responsibilities, promoting modularity and maintainability.",
+      "C. Minimizing the number of modules to reduce complexity.",
+      "D. Avoiding any dependencies between modules."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "You need to implement a mechanism to validate user input before saving it to the database. Which pattern is most suitable?",
+    "options": [
+      "A. Singleton",
+      "B. Factory",
+      "C. Strategy or Template Method",
+      "D. Observer"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "An application requires access to configuration settings stored in an external system. These settings are accessed frequently. Which pattern can improve performance by caching the settings?",
+    "options": [
+      "A. Proxy or Decorator (for caching)",
+      "B. Observer",
+      "C. Factory",
+      "D. Strategy"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "question": "You need to design a module that can generate different types of reports (PDF, Excel, CSV). Which pattern helps encapsulate the report generation logic for each format?",
+    "options": [
+      "A. Strategy or Abstract Factory (for families of related objects)",
+      "B. Singleton",
+      "C. Facade",
+      "D. Observer"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "question": "You are designing a system that needs to notify multiple modules when a specific event occurs, such as a new user registration. Which pattern facilitates this type of communication?",
+    "options": [
+      "A. Observer or Publish-Subscribe",
+      "B. Strategy",
+      "C. Facade",
+      "D. Singleton"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "question": "An application needs to interact with different payment gateways based on user preferences. Which pattern allows you to dynamically select the appropriate payment gateway at runtime?",
+    "options": [
+      "A. Abstract Factory, Factory, or Strategy",
+      "B. Singleton",
+      "C. Observer",
+      "D. Decorator"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "question": "Architecture Dashboard shows a high \"Module Coupling\" score for a specific module. What does this indicate?",
+    "options": [
+      "A. The module is well-designed with minimal dependencies.",
+      "B. The module has excessive dependencies on other modules, making it fragile and prone to impact from changes in other parts of the system.",
+      "C. The module is too small and should be combined with others.",
+      "D. The module is not used by any other part of the application."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "During development, you introduce a dependency that violates the architectural guidelines. How will this be detected?",
+    "options": [
+      "A. The application will stop working.",
+      "B. Architecture Dashboard will flag a violation.",
+      "C. The compiler will report an error.",
+      "D. There will be no immediate indication, but problems may arise during testing or deployment."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "You're unsure whether your planned architecture adheres to OutSystems best practices. What's the most efficient way to verify this before starting development?",
+    "options": [
+      "A. Consult with an experienced OutSystems architect and use Architecture Dashboard to validate the planned module structure and dependencies.",
+      "B. Start development and refactor the architecture later if needed.",
+      "C. Rely solely on your own knowledge of architectural principles.",
+      "D. There's no way to verify the architecture beforehand."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "question": "A module contains a large, complex function that handles multiple unrelated tasks. How can you improve its readability and maintainability?",
+    "options": [
+      "A. Add more comments to explain the code.",
+      "B. Decompose the function into smaller, more focused functions, each handling a single task.",
+      "C. Rename the function to be more descriptive.",
+      "D. Move the function to a different module."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "You notice several Screen Actions performing similar calculations. What refactoring technique can you apply?",
+    "options": [
+      "A. Copy and paste the calculation logic into each Screen Action.",
+      "B. Create a reusable Server Action or function for the calculation and call it from the Screen Actions.",
+      "C. Rename the variables used in the calculations to avoid conflicts.",
+      "D. Ignore the duplication, as it doesn't affect the functionality."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "You are refactoring a module and encounter a section of commented-out code. What should you do?",
+    "options": [
+      "A. Leave it in place, as it might be useful later.",
+      "B. Move the commented-out code to a separate module.",
+      "C. If the code is truly no longer needed, delete it to improve readability and reduce clutter. If there's a chance it might be needed, consider adding a note explaining why it was removed.",
+      "D. Uncomment the code and reintegrate it into the module."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "You have identified a performance bottleneck in a database query. What refactoring techniques can you apply?",
+    "options": [
+      "A. Rewrite the query to be more efficient, potentially adding indexes or optimizing data access patterns. Consider caching frequently accessed data.",
+      "B. Increase the server resources allocated to the database.",
+      "C. Reduce the amount of data retrieved by the query.",
+      "D. Cache the entire database in memory."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "question": "You're starting a new project and need to create a Style Guide module. What is the recommended approach?",
+    "options": [
+      "A. Start with the OutSystems UI framework and customize it to meet your specific design requirements. Build up from a base rather than from scratch.",
+      "B. Build the Style Guide from scratch to have complete control.",
+      "C. Copy the Style Guide from a previous project.",
+      "D. There's no need for a Style Guide module; you can define styles directly in each application."
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "question": "Your Style Guide module contains a reusable Web Block for a data grid. How can you allow developers to customize the grid's appearance (e.g., colors, fonts) without modifying the Style Guide directly?",
+    "options": [
+      "A. Hardcode the styles within the Web Block.",
+      "B. Expose style properties in the Web Block so developers can customize them via attributes.",
+      "C. Create different versions of the Web Block for each possible style.",
+      "D. Instruct developers to copy and paste the Web Block into their applications and make modifications there."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "How can you ensure consistency in the use of UI patterns and styles across a large development team?",
+    "options": [
+      "A. Rely on individual developers to follow the style guidelines.",
+      "B. Provide clear documentation and training on using the Style Guide module. Consider incorporating automated UI tests to catch deviations from the style guide.",
+      "C. There's no way to enforce consistency across a large team.",
+      "D. Lock down the Style Guide module to prevent modifications."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "You have several independent applications that need to share user authentication and authorization. How can you achieve this without code duplication?",
+    "options": [
+      "A. Implement authentication and authorization separately in each application.",
+      "B. Create a shared \"Users\" application containing the authentication and authorization modules, and reference it from the other applications.",
+      "C. Store user credentials in a shared database.",
+      "D. Use a third-party authentication service."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "You are decomposing a large application into smaller, more manageable applications. What are the key considerations for defining the boundaries between these applications?",
+    "options": [
+      "A. Randomly assign modules to different applications.",
+      "B. Identify logical groupings of functionality based on business domains or user groups. Consider deployment and lifecycle management needs.",
+      "C. Minimize the number of applications to reduce complexity.",
+      "D. Avoid any dependencies between applications."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "Two applications need to exchange data in real time. How can you facilitate this communication?",
+    "options": [
+      "A. Use database triggers to synchronize data between the applications.",
+      "B. Implement a message queue or other asynchronous communication mechanism. Consider an event-driven architecture for decoupling.",
+      "C. Directly access the database of one application from the other.",
+      "D. Combine the two applications into a single application."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "An application is experiencing performance issues during peak hours. You have determined that a specific module is the bottleneck. How can you isolate this module's impact on the rest of the application?",
+    "options": [
+      "A. Rewrite the entire application.",
+      "B. Deploy the problematic module as a separate application and scale it independently.",
+      "C. Remove the module from the application.",
+      "D. Combine the module with other modules to distribute the load."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What are the main components of the Architecture Canvas?",
+    "options": [
+      "A. Screens, Entities, and Server Actions.",
+      "B. Layers, Bounded Contexts, and Non-Functional Requirements.",
+      "C. UI, Business Logic, and Data.",
+      "D. Processes, Timers, and Integrations."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "A team is starting a new project and wants to use the Architecture Canvas. What is their first step?",
+    "options": [
+      "A. Choose a suitable application theme.",
+      "B. Identify and define the bounded contexts of their application.",
+      "C. Design the user interface.",
+      "D. Create the database model."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "How does the Architecture Canvas help in managing technical debt?",
+    "options": [
+      "A. By automatically refactoring code.",
+      "B. By providing a visual representation of the architecture, it helps identify potential areas of complexity and dependencies that can contribute to technical debt.",
+      "C. By generating documentation.",
+      "D. By enforcing coding standards."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the relationship between bounded contexts and modules in the Architecture Canvas?",
+    "options": [
+      "A. Bounded contexts are a type of module.",
+      "B. Modules are a type of bounded context.",
+      "C. Bounded contexts define logical boundaries within the application, while modules are the building blocks that implement the functionality within those boundaries.",
+      "D. There is no relationship between them."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What is the role of a Solution Architect in the OutSystems design process?",
+    "options": [
+      "A. To write all the code.",
+      "B. To manage the project timeline.",
+      "C. To define the overall architecture vision, make key technical decisions, and ensure alignment with business goals.",
+      "D. To perform user acceptance testing."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What is the significance of Proof of Concepts (POCs) in the design process?",
+    "options": [
+      "A. To replace comprehensive testing.",
+      "B. To finalize the user interface design.",
+      "C. To validate the feasibility of specific technical approaches or integrations before full implementation.",
+      "D. To determine the project budget."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "How should Non-Functional Requirements (NFRs) be addressed in the design process?",
+    "options": [
+      "A. They should be ignored until the development phase.",
+      "B. They should be considered throughout the design process, influencing architectural choices and ensuring the final solution meets quality attributes like performance, security, and scalability.",
+      "C. They should be documented but not implemented.",
+      "D. They are the sole responsibility of the testers."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the iterative nature of the design process in OutSystems?",
+    "options": [
+      "A. The design is fixed and cannot be changed after the initial phase.",
+      "B. The design is not a one-time event but an ongoing process that evolves as the application develops, allowing for adjustments based on feedback and changing requirements.",
+      "C. The design is determined solely by the developers.",
+      "D. The design is automatically generated by the platform."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What are the characteristics of a well-designed OutSystems architecture?",
+    "options": [
+      "A. Tight coupling, low cohesion, and monolithic structure.",
+      "B. Loose coupling, high cohesion, separation of concerns, scalability, and maintainability.",
+      "C. Complex and difficult-to-understand modules.",
+      "D. Minimal testing and documentation."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "How does the principle of 'separation of concerns' improve architecture?",
+    "options": [
+      "A. By combining different functionalities within the same module.",
+      "B. By making the code harder to understand.",
+      "C. By dividing the application into modules with distinct responsibilities, it improves code organization, reduces complexity, and makes maintenance easier.",
+      "D. By increasing the number of dependencies between modules."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What is the importance of scalability in a good architecture design?",
+    "options": [
+      "A. Scalability is only relevant for small applications.",
+      "B. Scalability ensures the application can handle increasing user loads and data volumes without significant performance degradation, enabling future growth and adaptation.",
+      "C. Scalability is the sole responsibility of the infrastructure team.",
+      "D. Scalability can be easily added later without architectural changes."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the purpose of the Facade pattern in OutSystems?",
+    "options": [
+      "A. To expose the internal complexities of a subsystem.",
+      "B. To create multiple instances of a class.",
+      "C. To provide a simplified interface to a complex subsystem or set of services, hiding the underlying complexity from the consumer.",
+      "D. To manage the application's lifecycle."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What is the Singleton pattern, and how is it commonly implemented in OutSystems?",
+    "options": [
+      "A. It's a pattern for creating multiple instances of a class.",
+      "B. The Singleton pattern ensures that a class has only one instance and provides a global point of access to it. In OutSystems, Site Properties are often used to implement Singletons.",
+      "C. It's a pattern for managing database connections.",
+      "D. It's a pattern for handling user interface events."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "When integrating with external systems having varying data formats, what integration pattern is beneficial?",
+    "options": [
+      "A. Direct database access.",
+      "B. Point-to-point integration.",
+      "C. The Canonical Data Model pattern. It defines a standard format for data exchange between systems, regardless of their internal data structures.",
+      "D. Sharing the database schema with all external systems."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What pattern is suitable for implementing complex business processes involving multiple steps and actors?",
+    "options": [
+      "A. Singleton Pattern.",
+      "B. Factory Pattern.",
+      "C. Business Process Technology (BPT) or Orchestration patterns. These patterns manage the flow and execution of multi-step processes, ensuring consistency and control.",
+      "D. Observer Pattern."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "How can the Factory pattern be useful in OutSystems development?",
+    "options": [
+      "A. For restricting access to a single object.",
+      "B. For caching frequently accessed data.",
+      "C. The Factory pattern helps create objects without specifying their concrete classes, allowing for flexibility and extensibility. It's useful when the type of object to create needs to be determined at runtime.",
+      "D. For handling asynchronous events."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What types of architectural violations can the Discovery tool identify?",
+    "options": [
+      "A. Coding style violations.",
+      "B. Performance bottlenecks.",
+      "C. Cyclic dependencies, upward references, missing dependencies, and excessive module coupling. These violations can indicate potential problems with the architecture.",
+      "D. Unused variables and functions."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "How does the Architecture Dashboard help improve application quality?",
+    "options": [
+      "A. It automatically generates test cases.",
+      "B. By providing visualizations and metrics of the architecture, it helps identify and address deviations from best practices, improving code quality and maintainability.",
+      "C. It deploys the application to production.",
+      "D. It provides user training."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the relationship between Architecture Dashboard and Discovery?",
+    "options": [
+      "A. They are unrelated tools.",
+      "B. Discovery is part of Architecture Dashboard.",
+      "C. Architecture Dashboard is part of Discovery.",
+      "D. Discovery performs the static analysis of the code and provides the data visualized in Architecture Dashboard."
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "question": "What are some common code smells that indicate a need for refactoring in OutSystems?",
+    "options": [
+      "A. Clear variable names and well-structured code.",
+      "B. Duplicate code, long methods, large modules, high coupling, low cohesion, and commented-out code. These indicate potential issues with code quality and maintainability.",
+      "C. Comprehensive unit tests.",
+      "D. Efficient database queries."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the process for safely refactoring an OutSystems module?",
+    "options": [
+      "A. Modify code directly in production.",
+      "B. Analyze the code, identify areas for improvement, make small incremental changes, test thoroughly, and deploy the changes in a controlled manner.",
+      "C. Avoid testing during refactoring.",
+      "D. Make large, sweeping changes all at once."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What tools or techniques in OutSystems assist in refactoring?",
+    "options": [
+      "A. There are no specific refactoring tools in OutSystems.",
+      "B. OutSystems provides refactoring tools within Service Studio, like renaming elements, extracting methods, and moving elements between modules. Version control systems like Git are also essential.",
+      "C. Only manual refactoring is possible.",
+      "D. Refactoring is handled automatically by the platform."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "How can refactoring improve the long-term maintainability of an OutSystems application?",
+    "options": [
+      "A. By increasing code complexity.",
+      "B. By making the code harder to understand.",
+      "C. By reducing complexity, improving code structure, and removing redundancy, refactoring makes the code easier to understand, modify, and maintain over time.",
+      "D. By introducing new bugs."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "What is the main purpose of a Style Guide module in OutSystems applications?",
+    "options": [
+      "A. To improve application performance.",
+      "B. To store business logic.",
+      "C. To manage data.",
+      "D. To ensure consistency in user interface design across different applications. It acts as a central repository for UI patterns, styles, and resources."
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "question": "What are the benefits of implementing a custom Style Guide?",
+    "options": [
+      "A. Increased development time and effort.",
+      "B. Inconsistent user experience.",
+      "C. Enhanced user experience consistency, simplified maintenance, easier branding updates, and faster development by reusing UI elements.",
+      "D. Difficulty in adapting to new branding requirements."
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "question": "How should a custom Style Guide be structured for maximum reusability and maintainability?",
+    "options": [
+      "A. Combine all UI elements into a single, large Web Block.",
+      "B. It should be organized into a Foundation layer module with reusable Web Blocks, CSS stylesheets, and resources. Style properties should be exposed for customization.",
+      "C. Embed styles directly into each screen.",
+      "D. Avoid using CSS stylesheets."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What is the difference between Application Composition and Module Architecture?",
+    "options": [
+      "A. They are the same concept.",
+      "B. Module architecture focuses on the internal structure of a single application, while Application Composition deals with the relationships and dependencies between multiple applications.",
+      "C. Application Composition is part of Module Architecture.",
+      "D. Module Architecture is part of Application Composition."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "How can Application Composition principles be used to improve the scalability of a large application?",
+    "options": [
+      "A. By building a monolithic application.",
+      "B. By decomposing the application into smaller, independent applications that can be scaled individually based on their specific needs.",
+      "C. By ignoring dependencies between modules.",
+      "D. By limiting the number of users."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "What benefits does LifeTime offer in managing Application Composition?",
+    "options": [
+      "A. LifeTime makes Application Composition more complex.",
+      "B. LifeTime provides tools to define dependencies between applications, automate deployments, and manage the lifecycle of multiple applications in a coordinated way.",
+      "C. LifeTime has no role in Application Composition.",
+      "D. LifeTime is only used for managing individual modules."
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "question": "When is it appropriate to create a new application instead of adding more modules to an existing application?",
+    "options": [
+      "A. When the new functionality is closely related to the existing functionality and has the same lifecycle.",
+      "B. When the new functionality represents a distinct business domain or user group, has its own lifecycle, or needs to be scaled independently.",
+      "C. When the existing application is small and easy to manage.",
+      "D. When the development team is new to OutSystems."
+    ],
+    "correctAnswer": "B"
+  }
+]

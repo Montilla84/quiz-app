@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #f8f9fa;
 }
 
 .App-logo {
@@ -15,13 +20,30 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.App-header p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0;
 }
 
 .App-link {
@@ -35,4 +57,81 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.next-button, .restart-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem;
+  transition: background-color 0.3s;
+}
+
+.next-button:hover, .restart-button:hover {
+  background-color: #0056b3;
+}
+
+.quiz-finished {
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-finished h2 {
+  color: #4f46e5;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.quiz-setup {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.questions-input {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.questions-input label {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.questions-input input {
+  width: 100px;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.start-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover {
+  background-color: #45a049;
 }
