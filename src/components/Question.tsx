@@ -30,7 +30,7 @@ const Question: React.FC<QuestionProps> = ({ question, onAnswer, showAnswer }) =
             }`}
             disabled={showAnswer}
           >
-            {String.fromCharCode(65 + index)}. {option}
+            {option}
           </button>
         ))}
       </div>
