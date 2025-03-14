@@ -1,46 +1,25 @@
-# Getting Started with Create React App
+# How to Use the App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Step 1: Start the Quiz
 
-## Available Scripts
+To start the quiz, open the app and click on the "Comenzar Quiz" button. You will be prompted to select the number of questions you want to answer.
 
-In the project directory, you can run:
+![Start Quiz](screenshots/start-quiz.png)
 
-### `npm start`
+### Step 2: Select the Number of Questions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Enter the number of questions you want to answer in the input field and click "Comenzar Quiz". The quiz will start with the selected number of questions.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Select Number of Questions](screenshots/select-questions.png)
 
-### `npm test`
+### Step 3: Answer Questions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Read each question carefully and select the correct answer by clicking on one of the options. The app will indicate whether your answer is correct or incorrect.
 
-### `npm run build`
+![Answer Question](screenshots/answer-question.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Step 4: View Final Score
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After answering all the questions, the app will display your final score. You can restart the quiz by clicking on the "Reiniciar Quiz" button.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+![View Final Score](screenshots/final-score.png)
