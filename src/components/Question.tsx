@@ -20,17 +20,17 @@ const Question: React.FC<QuestionProps> = ({ question, onAnswer, showAnswer }) =
         {question.options.map((option, index) => (
           <button
             key={index}
-            onClick={() => !showAnswer && onAnswer(String.fromCharCode(65 + index))}
+            onClick={() => !showAnswer && onAnswer(option)}
             className={`option-button ${
               showAnswer
-                ? String.fromCharCode(65 + index) === question.correctAnswer
+                ? option === question.correctAnswer
                   ? 'correct'
                   : 'incorrect'
                 : ''
             }`}
             disabled={showAnswer}
           >
-            {String.fromCharCode(65 + index)}. {option}
+            {option}
           </button>
         ))}
       </div>
